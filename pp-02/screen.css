@@ -31,3 +31,12 @@ h1, nav {
 h2 {
   font-weight:bold;
 }
+
+ul {
+  list-style-type: disc;
+}
+
+.personal-info {
+  background-color: green;
+  padding-bottom: 25px;
+}
