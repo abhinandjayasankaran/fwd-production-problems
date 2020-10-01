@@ -23,3 +23,11 @@ h1 {
   line-height: 1.0552085092em; /* 37.5 / 35.538 = 1.0552085092; (1.5 times the 25px baseline */
   padding-bottom: 25px;
 }
+
+h1, nav {
+  padding-bottom: 25px;
+}
+
+h2 {
+  font-weight:bold;
+}
