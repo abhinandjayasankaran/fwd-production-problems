@@ -37,6 +37,14 @@ ul {
 }
 
 .personal-info {
-  background-color: green;
+  background-color: blue;
+  padding-bottom: 25px;
+}
+
+.quick-facts {
+  font-weight:bold;
+}
+
+.dog{
   padding-bottom: 25px;
 }
