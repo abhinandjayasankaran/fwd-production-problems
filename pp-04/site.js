@@ -4,15 +4,22 @@
   `x` as the variable inside the function, however.
 */
 
-x = 5;
+
+
+/*----------------------------
+var x = 5;
 
 function double(num) {
-  x = num * 2;
-  return x;
-}
+    var x = num * 2;
+    console.log('The value of doubled x is', x);
+    return x;
+  }
 
 double(6);
 console.log('The value of x is', x, '-- it should be 5.');
+--------------------------------*/
+
+
 
 /*
   Step 2. Rewrite the JavaScript `double()` function above so that
@@ -25,8 +32,50 @@ console.log('The value of x is', x, '-- it should be 5.');
 */
 
 
+
+/*---------------------------------
+function main(){
+  var x = 5;
+
+  function double(num) {
+    var x = num * 2;
+    console.log('The value of doubled x is', x);
+    return x;
+  }
+
+  double(6);
+  console.log('The value of x is', x, '-- it should be 5.');
+}
+
+-----------------------------------*/
+
+
+
 /*
   Step 3. Rewrite your corrected `double()` function from Step 2.
   so that non-number values passed into the function are handled
   in some reasonable way.
 */
+
+function main(){
+  var x = 5;
+
+  function double(num) {
+
+    if(!isNaN(num)){
+      var x = num * 2;
+      console.log('The value of doubled x is', x);
+      return x;
+    }
+
+    else{
+      console.log('Error: Not A Number!');
+      return 'NaN';
+    }
+  }
+
+  double(6);
+  console.log('The value of x is', x, '-- it should be 5.');
+}
+
+main();
